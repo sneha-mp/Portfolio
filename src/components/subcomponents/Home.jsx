@@ -70,7 +70,7 @@ const Home = () => {
             <FontAwesomeIcon icon={faMusic} className="text-white" beatFade/>
             <p className="text-white text-[12px]">Hey! Want some background music?</p>
             <FontAwesomeIcon icon={faFaceSmile} bounce className="text-white"/>
-            <audio id="bg-music" src='https://res.cloudinary.com/dy7z1t4xi/video/upload/v1742501595/lnhroysqeg53jv3cvh1u.mp3'></audio>
+            <audio id="bg-music" src='https://res.cloudinary.com/dy7z1t4xi/video/upload/v1742503312/jfjdale4xbdnf6w0odfs.mp3'></audio>
           </div>
         </motion.div>
         <motion.img animate={bounce} src={bg} alt="image" className="mobile:w-[300px] w-auto tablet:w-[350px]"/>
