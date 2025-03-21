@@ -18,7 +18,7 @@ const Full_body = () => {
       <p className='text-white text-center font-tektur text-[25px] mobile:pb-2'>MY WORKS</p>
       <Work/>
       </section>
-      <section id='CONTACT' className='bg-black mobile:min-h-screnn lg:min-h-screen mobile:py-10 tablet:h-auto py-3'>
+      <section id='CONTACT' className='bg-black mobile:h-screen lg:min-h-screen mobile:py-10 tablet:h-auto py-3'>
       <p className='text-white text-center font-tektur text-[25px]'>CONTACT ME</p>
       <Contact/>
       </section>

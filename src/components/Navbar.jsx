@@ -1,5 +1,5 @@
 import {motion} from "framer-motion";
-import React, {  useState } from "react";
+import React, {  useEffect, useState } from "react";
 import { bottombar, middlebar, movefromleft, movefromright, movefromtop, topbar } from "../animation";
 
 const Navbar = () => {
@@ -17,6 +17,21 @@ const Navbar = () => {
     window.scrollTo({top:position,behavior:"smooth"})
   }
   }
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll("section");
+      sections.forEach((section) => {
+        if (window.scrollY >= section.offsetTop - 150) {
+          setActive(section.id);
+        }
+      });
+    };
+  
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  
+
   return (
     <nav className="bg-black w-full px-4 py-2 z-10 flex justify-between items-center top-0 sticky shadow-lg shadow-blue-950">
       <motion.div variants={movefromleft(1)} initial='initial' whileInView='after'>
